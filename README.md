@@ -1,2 +1,1 @@
-# evalup_teachers_app
- 
+# SAMAPP - Student APP
