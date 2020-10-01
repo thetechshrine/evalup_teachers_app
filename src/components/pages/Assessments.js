@@ -36,7 +36,7 @@ function Assessments() {
     close();
   }
 
-  function handleOpenResults({ assessmentId } = {}) {
+  function handleOpenAssessmentResults({ assessmentId } = {}) {
     history.push(`/assessments/${assessmentId}`);
   }
 
@@ -48,7 +48,7 @@ function Assessments() {
             key={assessment.id}
             assessment={assessment}
             onOpenSubject={handleOpenAssessemntSubject}
-            onOpenResults={handleOpenResults}
+            onOpenResults={handleOpenAssessmentResults}
           />
         ))}
       </SimpleGrid>

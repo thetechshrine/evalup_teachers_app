@@ -45,7 +45,7 @@ function AssessmentResults() {
 
   function displayAssessmentResults() {
     return (
-      <SimpleGrid columns={4} spacing={10}>
+      <SimpleGrid columns={3} spacing={10}>
         {assessmentResults.map((assessmentResult) => (
           <AssessmentResult
             key={assessmentResult.id}

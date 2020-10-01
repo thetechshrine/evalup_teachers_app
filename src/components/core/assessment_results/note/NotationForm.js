@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Stack, FormControl, FormLabel, NumberInput, Input, NumberInputField, Textarea, Button } from '@chakra-ui/core';
+import { Stack, FormControl, FormLabel, NumberInput, NumberInputField, Textarea, Button } from '@chakra-ui/core';
 
 import Form from '../../../helpers/Form';
 

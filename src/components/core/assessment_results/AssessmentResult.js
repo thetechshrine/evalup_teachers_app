@@ -70,7 +70,7 @@ function AssessmentResult({ assessmentResult, onOpenReport, onAssignNote }) {
               <Box as={getStudentGenderIcon(assessmentResult.student)} size={16} />
             </Badge>
           </Text>
-          <Stack direction='row' fontSize='1.05rem'>
+          <Stack direction='row' fontSize='1rem'>
             <Text color='gray.500'>Ajouté le</Text>
             <Text fontWeight='medium'>{new Date(assessmentResult.createdAt).toLocaleDateString()}</Text>
             <Text color='gray.500'>à</Text>
@@ -98,6 +98,18 @@ function AssessmentResult({ assessmentResult, onOpenReport, onAssignNote }) {
             <Text color='gray.500'>Crédits</Text>
           </Stack>
         </SimpleGrid>
+
+        {assessmentResult.comments && (
+          <>
+            <Divider />
+            <Stack p={3}>
+              <Text fontWeight='medium' color='gray.500' fontSize='1.05rem'>
+                Commentaires
+              </Text>
+              <Text>{assessmentResult.comments}</Text>
+            </Stack>
+          </>
+        )}
 
         <Stack
           w='100%'
