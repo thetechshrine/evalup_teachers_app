@@ -1,4 +1,4 @@
-const TOKEN_KEY = 'evalup_students_app_token';
+const TOKEN_KEY = 'evalup_teachers_app_token';
 
 function setToken(token) {
   localStorage.setItem(TOKEN_KEY, token);
